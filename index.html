@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- your metadata goes here in the "head" -->
+    <title>Your Page Title</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="What's this page about?">
+    <link rel="icon" href="images/favicon.png">
+    
+    <!-- metadata for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- "open graph" metadata for social media posts -->
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="What's this page about?">
+    <meta property="og:image" content="https://website.com/images/splash.png">
+    <meta property="og:url" content="https://website.com">
+    <meta property="og:type" content="website">
+
+  </head>
+  <body>
+    <!-- you page's content goes here in the body -->
+    <h1>Welcome to the Backgrounds!</h1>
+
+    <p>
+      Sasha, Jadie, Nico, and Leo.
+    </p>
+    <style>
+  h1{ color: red;}
+  body { background-color: black; }
+      p{ color: red; }
+
+    </style>iframe>
+    <nav>
+      <a href="https://smiski.com/e/">smiskis</a>
+      <a href="https://youtu.be/1F8CA2OY7Lk">love the steelers in pgh</a>
+    </nav>
+  </body>
+    <p>
+      Sasha Hoffman: Pittsburgh, PA
+    </p>
+
+  <br>
+<img           src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjR4eGdodzk1dW54eXlkdGJ3OHpvcTZmdmNieml5NmQ3MDc5NGxkaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kn2avHXPh1THMFuFNR/giphy.gif" alt="smiski popup"
+  style="position:fixed; bottom:0px;"
+     >
+
+<img src="https://media.tenor.com/BeXiflifHvUAAAAi/musical-notes.gif" alt="music dance">
+  
+<!-- just need to upload links to our sketches here but I don't know how to add our links. -->
+
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>DVD Bounce</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #dvd {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 150px;
+      will-change: transform;
+      user-select: none;
+      -webkit-user-drag: none;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+<img id="dvd"
+     src="https://www.image2url.com/r2/default/images/1793669998770-87762ced-41aa-4990-975a-2a45e37938e6.png"
+     alt="">
+<script>
+(() => {
+  const img = document.getElementById('dvd');
+
+  // speed in pixels per frame (lower = slower)
+  let vx = 1.2;
+  let vy = 1.0;
+
+  // start somewhere not on the border
+  let x = 100;
+  let y = 100;
+
+  function step() {
+    const w = img.getBoundingClientRect().width;
+    const h = img.getBoundingClientRect().height;
+
+    const maxX = window.innerWidth - w;
+    const maxY = window.innerHeight - h;
+
+    x += vx;
+    y += vy;
+
+    // bounce off edges
+    if (x <= 0) { x = 0; vx = Math.abs(vx); }
+    if (x >= maxX) { x = maxX; vx = -Math.abs(vx); }
+    if (y <= 0) { y = 0; vy = Math.abs(vy); }
+    if (y >= maxY) { y = maxY; vy = -Math.abs(vy); }
+
+    img.style.transform = `translate(${x}px, ${y}px)`;
+
+    requestAnimationFrame(step);
+  }
+
+  // wait until image has size, then start
+  
+  if (img.complete) step();
+  else img.onload = step;
+
+  // optional: keep it in bounds on resize
+  window.addEventListener('resize', () => {
+    const w = img.getBoundingClientRect().width;
+    const h = img.getBoundingClientRect().height;
+    x = Math.min(Math.max(0, x), window.innerWidth - w);
+    y = Math.min(Math.max(0, y), window.innerHeight - h);
+  });
+})();
+</script>
+
+</body>
+
+
+<style>
+@keyframes horrorShake {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  20%  { transform: translate(-2px, 1px) rotate(-0.5deg); }
+  40%  { transform: translate(2px, -1px) rotate(0.5deg); }
+  60%  { transform: translate(-2px, -1px) rotate(0deg); }
+  80%  { transform: translate(1px, 2px) rotate(0.5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+</style>
+
+<img src="https://www.image2url.com/r2/default/images/1793670075572-f348c5b4-5de3-44ef-a90c-8a707dc6f624.webp"
+     width="150"
+     style="
+       position:fixed;
+       bottom:200px;
+       right:500px;
+       clip-path: inset(% 0 0 0);
+       animation: horrorShake 0.18s ease-in-out infinite;
+     ">
+
+<img src="https://www.image2url.com/r2/default/images/1793670165990-20bfd82c-16e2-4bc2-8b9c-840bbb6365d2.jpeg"
+     width="150"
+     style="position:fixed; bottom:400px; right:20px; clip-path: inset(10% 0 0 0);">
+>
+
+<img src="https://www.image2url.com/r2/default/images/1793670171610-732eb265-0b16-4956-965f-934b4e8fe6f0.jpeg"
+     width="100"
+     style="position:fixed; bottom:2px; right:630px;"
+>
+
+<style>
+@keyframes jelly {
+  0%   { transform: scale(1,1); }
+  30%  { transform: scale(1.2,0.8); }
+  40%  { transform: scale(0.8,1.2); }
+  55%  { transform: scale(1.1,0.9); }
+  70%  { transform: scale(0.95,1.05); }
+  100% { transform: scale(1,1); }
+}
+</style>
+
+<img src="https://www.image2url.com/r2/default/images/1793670188081-3f553f1f-a60d-4836-8999-32cf8f29a83c.png"
+     width="200"
+     style="
+       position:fixed;
+       bottom:2px;
+       right:100px;
+       animation: jelly 1s ease-in-out infinite;
+     ">
+
+<style>
+@keyframes bulge {
+  0%   { transform: scale(1, 1); }
+  25%  { transform: scale(1.15, 0.85); }
+  50%  { transform: scale(0.9, 1.1); }
+  75%  { transform: scale(1.1, 0.9); }
+  100% { transform: scale(1, 1); }
+}
+</style>
+
+<img src="https://www.image2url.com/r2/default/images/1793670180889-468a62d5-68d1-4094-8bc5-f877d73ff2d2.png"
+     width="150"
+     style="
+       position:fixed;
+       bottom:600px;
+       right:100px;
+       animation: bulge 1.2s ease-in-out infinite;
+     ">
+
+
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZxNzFqdnFqaDIxMDIzazZuc3J1bXFzZWcyNDljazhyczQ1MnAxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5Qx9Yo9PQvjYmyNquv/giphy.gif"
+     width="120"
+     style="position:fixed; bottom:500px;"
+     >
+
+  <img src="https://media.baamboozle.com/uploads/images/280389/1619549645_1946944_gif-url.gif"
+     width="120"
+     style="position:fixed; bottom:400px;"
+     >
+  
+<style>
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+</style>
+
+<img src="https://th.bing.com/th/id/R.b6f54a1e4c1cfeb36550cb0edd7dbaeb?rik=GInow8epk9hc2A&pid=ImgRaw&r=0"
+     width="100"
+     style="position:fixed; bottom:325px; right:300px; animation: spin 3s linear infinite;">
+
+
+
+</html>
